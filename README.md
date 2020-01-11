@@ -5,10 +5,12 @@ EPLAN P8 offers a pre-defined list of font sizes when working with texts.
 
 For multiple reasons, you may want to modify the list of values that is offered by the dropdown when editing text font size.
 
-The script *SetFontSizes* can be used to set your own list of values that are offered in the dropdown. Be sure to edit it accorsing to your needs. There are 10 font sizes offered by the EPLAN dropdown, so you must set a value for each of the "index" you want to modify.
+The script *SetFontSizes* can be used to set your own list of values that are offered in the dropdown. Be sure to edit it according to your needs. There are 10 font sizes offered by the EPLAN dropdown, so you must set a value for each of the "index" you want to modify, from 0 to 9.
 
 ## Working in different units and languages
 The default script assumes an EPLAN installation in metric (mm). For installation in imperial (Inch), the Setting path must be modifed accordingly. For metric installations, the path is *STATION.GedViewer.TextStyle.mm.EN.Heights*, where mm represents the units that were chosen when installing EPLAN **not the units currently used**, as EPLAN allows you to switch units "on the fly".
+
+For Inch installation, the setting path is *STATION.GedViewer.TextStyle.inch.EN.Heights*. Again, this is only in the case where you installed EPLAN in Inch. Even if you later change the usints to mm, the setting path doesn't change. It will only change if you reinstall EPLAN with defualt metric units.
 
 Also, the script assumes English as the installation language. For other languages, the setting path needs to be modified accordingly. In the default script, the path is *STATION.GedViewer.TextStyle.mm.EN.Heights*, where EN represents the language code for English. 
 
